@@ -123,8 +123,6 @@
                         }
                         echo "</tabel>";
                     }
-
-                    
                 ?>
             </table>
  

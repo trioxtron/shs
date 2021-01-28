@@ -9,9 +9,9 @@ body {
   margin: 0;
   background-color: #2F303A;
   font-family: Poppins, sans-serif;
-  font-size: 1.2rem;
   color: white;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 .full-height-grow {
@@ -62,7 +62,6 @@ body {
   height: 70px;
   background-color: #202027;
   font-weight: bold;
-  
 }
 
 .social-link img {
