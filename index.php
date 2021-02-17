@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <link href="index2.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <title>Startseite</title>
     </head>
