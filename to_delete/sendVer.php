@@ -9,7 +9,7 @@
 <?php
     $id = $_SESSION['userId'];
     $sql = "UPDATE allusers SET verSend='1' WHERE idUsers='$id'";
-    $_SESSION['sendVer'] = '1';
+    $_SESSION['sendVer'] = '0';
     if (mysqli_query($conn, $sql)) {
         if (isset($_SESSION['userId'])) {
             if ($_SESSION['verificated'] == 0) {

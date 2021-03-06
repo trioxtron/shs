@@ -129,7 +129,6 @@
                     $result = mysqli_query($conn, $sql);
                     $resultCheck = mysqli_num_rows($result);
                     if ($resultCheck > 0) {
-                        echo "<tabel>";
                         while ($row = mysqli_fetch_assoc($result)) {
                             if (isset($_GET['class'])) {
                                 if ($row['forsubject'] == $_GET['class']){

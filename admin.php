@@ -9,7 +9,7 @@
   if ($_SESSION['userId'] != 11 AND $_SESSION['userUid'] != 'Admin') {
     header("Location: start.php");
   }
-?>
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -121,12 +121,10 @@
                 Oder <b><a href="signup.php">Account erstellen</a></b>
               </div>
               <div class="input-group">
-                <button class ="btn" type="submit" name="login-submit">Anmelden</button>
+                <button class="btn" type="submit" name="login-submit">Anmelden</button>
               </div>
             </form>
           </section>
-
-
       </div>
 
       <div class="join-page-circle-1"></div>

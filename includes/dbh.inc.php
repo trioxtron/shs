@@ -1,14 +1,12 @@
 <?php
 
-$servername = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
-$dBName = "loginsystem";
+$db_servername = "localhost";
+$db_username = "root";
+$db_password = "";
+$db_name = "loginsystem";
 
-$conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
+$conn = mysqli_connect($db_servername, $db_username, $db_password, $db_name);
 
 if (!$conn) {
-
-    die("Connection failed: ".msqli_connect_error());
-
+    die("Internal Server Error");
 }

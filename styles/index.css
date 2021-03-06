@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+:root {
+  --pink-text: #BC3A80;
+  --blue-text: #639ce7; 
+  --blue-background: #1762A7; 
+  --button-color: #1762A7; 
+  --button-hover-color: #2180d8; 
+  --button-focus-color: #2796ff;
+  --background-color: #2F303A;
+  --items-background: #202027;
+  --bubble-pink: rgb(188, 58, 128, .1);
+  --bubble-blue: rgb(52, 87, 178, .1);
+}
+
+::selection {
+  background-color: var(--background-color);
+  color: var(--blue-text);
+}
+
+::-moz-selection {
+  background-color: var(--background-color);
+  color: var(--blue-text);
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Poppins, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a.button {
+  background-color: var(--button-color);
+}
+
+a.button:hover {
+  background-color: var(--button-hover-color);
+}
+
+form {
+  padding: 2rem 2.5rem;
+}
+
+img {
+  z-index: -1;
+}
+
+footer {
+  background-color: var(--items-background);
+}
+
+table {
+border-collapse: collapse;
+  width: 100%;
+  color: white;
+  text-align: left;
+  border-radius: .5rem;
+
+}
+
+th {
+  padding: .5rem .2rem;
+}
+
+td {
+  padding: .7rem .2rem;
+}
+
+tr:nth-child(even) {background-color: #1F303A}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown ul {
+  position: absolute;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.dropdown li {
+  display: none;
+}
+
+.dropdown a {
+  display: block;
+  padding: 1rem .8rem;
+  border-radius: .75rem;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover li {
+  display: block;
+}
+
+
+/* Own classes and id's */
+#bubbles li:nth-child(1) {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: var(--bubble-pink);
+    bottom: 5vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+#bubbles li:nth-child(2) {
+    position: absolute;
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    background-color: var(--bubble-blue);
+    top: 15vh;
+    left: 30vw;
+    z-index: -1;
+}
+
+#bubbles li:nth-child(3) {
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+#bubbles li:nth-child(3)::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: var(--bubble-blue);
+}
+
+.accent-text {
+  color: var(--pink-text);
+}
+
+.input-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.input-group input {
+  outline: none;
+  background: none;
+  border: 1px solid #2E3852;
+  font-size: 1em;
+  padding: .5em;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.btn {
+  color: white;
+  background-color: var(--button-color);
+  padding: .5rem .9rem;
+  border-radius: .5rem;
+  margin-top: -1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Poppins,sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+.btn:focus {
+  background-color: var(--button-focus-color);  
+}
+
+.input-group input:focus {
+  border-color: #596da0;
+}
+
+.disclaimer {
+  color: slategray;
+}
+
+.disclaimer a {
+  font-weight: bold;
+  color: var(--button-color);
+}
+
+.disclaimer a:hover {
+  color: var(--button-hover-color);
+}
+
+.item {
+  background-color: var(--items-background);
+  border-radius: 1rem;
+}
+
+.table-profile {
+  background-color: var(--blue-background);
+}
+
+.join-form {
+  background-color: #202027;
+  border-radius: 20px;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:last-child {
+  margin-bottom: 0;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.input-group select {
+  outline: none;
+  background: none;
+  border: 1px solid #2E3852;
+  font-size: 1em;
+  padding: .5em;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.input-group select option{
+  background: #2E3852;
+  border: none;
+}
+
+.input-group input:focus {
+  border-color: #596da0;
+}
