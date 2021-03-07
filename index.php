@@ -16,7 +16,7 @@ $content = '
     <li></li>
     <li></li>
 </ul>
-<div class="pt-5 container mx-auto mb-auto px-8 flex flex-col-reverse xl:flex-row xl:pt-72 2xl:pt-5">
+<div class="pt-5 container mx-auto mb-auto px-8 flex flex-col-reverse xl:flex-row xl:pt-28 2xl:pt-5">
     <div class="flex-grow hidden xl:block self-end w-1/3">
         <img src="images/char.png" alt="human" class="relative top-3">
     </div>
