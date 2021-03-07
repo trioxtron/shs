@@ -6,7 +6,8 @@ $styles = 'index';
 $title = 'Impressum';
 
 $header_links = array(
-    "join.php" => "Starten"
+    "join.php" => "Starten",
+    "discover.php" => "Kontakt"
 );
 
 $content = '

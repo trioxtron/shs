@@ -255,3 +255,7 @@ tr:nth-child(even) {background-color: #1F303A}
 .input-group input:focus {
   border-color: #596da0;
 }
+
+.information {
+  width: 40rem;
+}

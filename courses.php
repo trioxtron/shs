@@ -4,7 +4,7 @@ require_once('includes/common.inc.php');
 
 $styles = 'index';
 
-$title = "Start";
+$title = "Kurse";
 
 is_logged_in("join");
 

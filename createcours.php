@@ -5,6 +5,8 @@ $styles = 'index';
 
 $title = 'Kurs erstellen';
 
+is_logged_in("join");
+
 $header_links = array(
     "discover.php" => "Kontakt",
     "about.php" => "Über uns"
