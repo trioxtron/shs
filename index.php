@@ -6,8 +6,8 @@ $styles = 'index';
 $title = 'Schüler helfen Schülern';
 
 $header_links = array(
-    "discover2.php" => "Kontakt",
-    "about2.php" => "Über uns"
+    "discover.php" => "Kontakt",
+    "about.php" => "Über uns"
 );
 
 $content = '
@@ -32,7 +32,7 @@ $content = '
 
 $footer_links = array(
     "https://www.gsglebach.de/home.html" => "Schule",
-    "imprint2.php" => "Impressum"
+    "imprint.php" => "Impressum"
 );
 
 $footer_init_links = array(

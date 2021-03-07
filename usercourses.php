@@ -9,7 +9,7 @@ $title = "Start";
 is_logged_in("join");
 
 $header_links = array(
-    "usercourses.php" => "Meine Kurse"
+    "courses.php" => "Alle Kurse"
 );
 
 $userId = $_SESSION['userId'];
@@ -78,7 +78,7 @@ $content = "
 
 $footer_links = array(
     "https://www.gsglebach.de/home.html" => "Schule",
-    "imprint2.php" => "Impressum"
+    "imprint.php" => "Impressum"
 );
 
 $footer_init_links = array(

@@ -1,6 +1,6 @@
 <header>
     <div class="container mx-auto px-8 flex pt-1.5 justify-between">
-        <a href="index2.php" alt="logo">
+        <a href="index.php" alt="logo">
             <img src="images/logo3.png">
         </a>
         <ul class="flex items-center flex-nowrap space-x-6 text-md sm:text-lg">

@@ -30,7 +30,7 @@ $content = '
         </a>
     </div>
     <div class="item p-4 px-10 md:p-8 md:px-16">
-        <a href="contact2.php?id=' . $_GET["id"] .'">
+        <a href="contact.php?id=' . $_GET["id"] .'">
             <img src="#" alt="Email-Bild" class="pb-4">
             <p class="btn">Email schreiben</p>
         </a>
