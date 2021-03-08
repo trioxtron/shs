@@ -7,7 +7,7 @@ $title = 'Impressum';
 
 $header_links = array(
     "join.php" => "Starten",
-    "discover.php" => "Kontakt"
+    "about.php" => "Übersicht"
 );
 
 $content = '

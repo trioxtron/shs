@@ -6,7 +6,7 @@ $styles = 'index';
 $title = "Anmeldung";
 
 $header_links = array(
-    "discover.php" => "Kontakt"
+    "about.php" => "Übersicht"
 );
 if (isset($_SESSION['userId'])) {
     header("Location: ../shs/start.php");

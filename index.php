@@ -19,7 +19,7 @@ $content = '
     <div class="flex-grow hidden xl:block self-end w-1/3">
         <img src="images/char.png" alt="human" class="relative top-3">
     </div>
-    <div class="pt-52 xl:pt-0">
+    <div class="pt-52 xl:pt-20">
         <h1 class="font-bold text-6xl pb-5 xl:pt-32">Schüler helfen Schülern</h1>
         <p class="text-2xl pb-4">
             Melde dich an um zu helfen,<br>

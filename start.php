@@ -9,7 +9,7 @@ $title = "Start";
 is_logged_in("join");
 
 $header_links = array(
-    "discover.php" => "Kontakt"
+    "about.php" => "Übersicht"
 );
 
 $content = '
