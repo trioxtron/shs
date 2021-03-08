@@ -26,16 +26,6 @@ creatorEmail TINYTEXT NOT NULL,
 price TINYTEXT NOT NULL
 );
 ```
-* ### chats
-```sql
-CREATE TABLE chat ( 
-id int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL, 
-content LONGTEXT NOT NULL, 
-postDate DATE NOT NULL, 
-creatorName varchar(128), 
-creatorId int(11)
-); 
-```
 
 * ### forum
 ```sql
