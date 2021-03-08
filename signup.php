@@ -15,7 +15,7 @@ $content = '
     <li></li>
     <li></li>
 </ul>
-<div class="pt-16 py-16 px-8 container mx-auto flex flex-col justify-between items-center md:flex-row">
+<div class="pt-10 py-16 px-8 container mx-auto flex flex-col justify-between items-center md:flex-row">
     <div class="font-bold text-4xl pb-8 md:mr-16 xl:pb-36 xl:text-6xl xl:min-w-max">
         <h1>
             Beginne zu
@@ -40,7 +40,7 @@ $content = '
                 <label>Passwort bestätigen:</label>
                 <input type="password" name="pwd-repeat" placeholder="Passwort wiederholen">
             </div>
-            <p class="pb-6 disclaimer xl:text-xl">
+            <p class="pb-6 disclaimer xl:text-md">
                 *Nur Schüler des Geschwister Scholl Gymnasiums Lebachkönnen teilnehmen.<br>
                 Wenn du Helfen willst, musst du als Schüler des GSG verifiziert werden.
             </p>

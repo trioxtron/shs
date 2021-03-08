@@ -6,15 +6,14 @@ $styles = 'index';
 $title = "Über uns";
 
 $header_links = array(
-    "discover.php" => "Kontakt"
+    "about.php" => "Übersicht"
 );
 
 $content = '
-<div class="pt-16 px-8 container mx-auto flex flex-col-reverse justify-center items-center md:pt-8 xl:flex-row">
-    <div class="xl:pb-14 information">
-        <h1 class="font-bold underline text-4xl pb-4 xl:text-5xl xl:pt-20">Wir</h1>
+<div class="pt-6 px-8 container mx-auto flex flex-col-reverse justify-center items-center xl:flex-row">
+    <div class="xl:pb-8 information">
+        <h1 class="font-bold underline text-4xl pb-4 xl:text-5xl xl:pt-6">Wir</h1>
         <p>Wir sind 3 Schüler des Geschwister Scholl Gymnasiums Lebach, die sich als Aufgabe gesetzt haben,das Projekt<br>"Schüler helfen Schülern" unserer Schule zu digitalisieren, um den bestmöglichen Lernerfolg zu garantieren</p>
-        <div class="h-1 bg-gray-50 line my-2 mt-4"></div>
         <h1 class="font-bold underline text-4xl pb-4 pt-8 xl:text-4xl">Ben</h1>
         <p>Ben, 16 Jahre ist insbesonder zuständig für Design, hat alles Bilder entworfen und das Design der Seite entworfen.</p>
         <h1 class="font-bold underline text-4xl pb-4 pt-8 xl:text-4xl">Fedja</h1>

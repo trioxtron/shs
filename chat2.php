@@ -9,7 +9,8 @@ $title = "Auswahl";
 is_logged_in("join");
 
 $header_links = array(
-    "discover.php" => "Kontakt"
+    "start.php" => "Start",
+    "coures" => "Kurse"
 );
 
 if (!isset($_GET['id'])) {
@@ -37,13 +38,6 @@ $content = '
     <div>
 </div>';
 
-$footer_links = array(
-    "https://www.gsglebach.de/home.html" => "Schule",
-    "imprint2.php" => "Impressum"
-);
 
-$footer_init_links = array(
-    "join.php" => "Anmelden"
-);
 
-require_once(TEMPLATES_ROOT.'/base.php');
+require_once(TEMPLATES_ROOT.'/chat_base.php');

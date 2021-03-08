@@ -17,7 +17,7 @@ if (isset($_SESSION['userId'])) {
         <li></li>
         <li></li>
     </ul>
-    <div class="pt-16 px-8 container mx-auto flex flex-col justify-between items-center md:flex-row md:pt-40">
+    <div class="pt-16 px-8 container mx-auto flex flex-col justify-between items-center md:flex-row md:pt-32">
         <div class="font-bold text-4xl pb-8 md:pr-32 xl:pb-14 xl:text-6xl xl:min-w-max">
             <h1>
                 Beginne zu

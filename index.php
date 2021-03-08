@@ -6,8 +6,7 @@ $styles = 'index';
 $title = 'Schüler helfen Schülern';
 
 $header_links = array(
-    "discover.php" => "Kontakt",
-    "about.php" => "Über uns"
+    "about.php" => "Übersicht"
 );
 
 $content = '
