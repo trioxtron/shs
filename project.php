@@ -10,6 +10,11 @@ $header_links = array(
 );
 
 $content = '
+<ul id="bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 <div class="pt-32 px-8 container mx-auto flex flex-col-reverse justify-center items-center md:pt-8 xl:flex-row">
     <div>
         <h1 class="font-bold text-4xl pb-4 xl:text-6xl xl:pt-32">Unser Ziel:</h1>

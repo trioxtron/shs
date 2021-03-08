@@ -11,6 +11,11 @@ $header_links = array(
 );
 
 $content = '
+<ul id="bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 <div class="pt-48 px-8 container mx-auto flex justify-center items-center xl:pt-0">
     <div class="xl:pb-14">
         <h1 class="font-bold text-4xl pb-4 xl:text-6xl xl:pt-32">Du brauchst Hilfe?<br>Kontaktiere uns:</h1>

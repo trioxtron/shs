@@ -255,3 +255,25 @@ tr:nth-child(even) {background-color: #1F303A}
 .information {
   width: 40rem;
 }
+
+.chat {
+  padding: 1rem 1.5rem;
+  overflow-y: scroll;
+  height: 40em;
+}
+
+.foreign-message {
+  color: var(--blue-text);
+}
+
+.own-message {
+  color: var(--pink-text);
+}
+
+.foreign-message-box {
+  background-color: var(--bubble-blue);
+}
+
+.own-message-box {
+  background-color: var(--bubble-pink);
+}

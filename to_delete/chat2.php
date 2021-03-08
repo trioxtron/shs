@@ -24,6 +24,7 @@ $resultCheck = mysqli_num_rows($result);
 $chat_content = "";
 if ($resultCheck > 0) {
         if ($row['creatorName'] != $name){
+            $chat_content .=y
             echo "<div class = 'name'>" . $row['creatorName'] . " :</div> " . $row['content'] . " " . "<a class = 'date'>" . 
             $row['postDate'] . "</a><br>" ;
         }
@@ -35,11 +36,6 @@ if ($resultCheck > 0) {
 }
 
 $content = '
-<ul id="bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
 <div class="flex flex-col justify-center items-center space-y-10 pt-10 md:pt-32 md:flex-row md:space-x-10 md:space-y-0 xl:space-x-32">
     <div class="container item">
 

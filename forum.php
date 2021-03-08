@@ -1,65 +1,55 @@
-<?php
-    include_once 'includes/dbh.inc.php';
-?>
-<?php
-    session_start();
-?>
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <link href="styles.css" rel="stylesheet">
-            <link href="forum.css" rel="stylesheet">
-            <link rel="icon" href="images/favicon.png" type="image/png">
-            <title>Forum</title>
-        </head>
-        <body class="full-height-grow">
-            <header class="main-header">
-                <a href="/" class="brand-logo">
-                    <img src="images/logo3.png">
-                </a>
-                <h1>Forum</h1>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="start.php">Start</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <?php
-                $name = $_SESSION['userUid'];
-                $sql = "SELECT * FROM forum;";
-                $result = mysqli_query($conn, $sql);
-                $resultCheck = mysqli_num_rows($result);
-                if ($resultCheck > 0) {
-                    echo "<div class='chatbox'> <div class = 'chat'>";
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        if ($row['creatorName'] != $name){
-                            echo "<div class = 'name'>" . $row['creatorName'] . " :</div> " . $row['content'] . " " . "<a class = 'date'>" . 
-                            $row['postDate'] . "</a><br>" ;
-                        }
-                        else {
-                            echo "<div class = 'name2'>" . $row['creatorName'] . " :</div> " . $row['content'] . " " . "<a class = 'date'>" . 
-                            $row['postDate'] . "</a><br>" ;
-                        }         
-                    }
-                    echo "</div></div>";
-                }
-                    
-            ?>
+<?php 
+require_once('includes/common.inc.php');
 
-            <div class="join-page-circle-1"></div>
-            <div class="join-page-circle-2"></div>
-            <div class="join-page-circle-3"></div>
-            <div class="footer">
-                <form action="includes/forum.inc.php" method="post">
-                    <div class= "input-group">   
-                        <input type="text" name="text" placeholder="Nachricht">
-                        <button class="btn" type="submit" name="send">Abschicken</button>
-                    </div>
-                </form>
-            </div>
-        </body>
-    </html>
 
+$styles = 'index';
+
+$title = "Forum";
+
+is_logged_in("join");
+
+$header_links = array(
+    "start.php" => "Start",
+    "coures" => "Kurse" 
+);
+
+
+$name = $_SESSION['userUid'];
+$sql = "SELECT * FROM forum;";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+$chat_content = "";
+if ($resultCheck > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        if ($row['creatorName'] != $name){
+            $chat_content .= "
+            <div class='flex-shrink p-1.5 rounded-2xl rounded-tl-none mb-4 inline-block foreign-message-box mr-auto'>
+                <div class='flex items-center'>
+                    <p class='foreign-message'>{$row['creatorName']}</p>
+                    <p class='disclaimer text-xs pl-2'>{$row['postTime']}</p>
+                </div>
+                <p class=''>{$row['content']}</p>
+            </div>";
+        }
+        else {
+            $chat_content .= "
+            <div class='flex-shrink p-1.5 rounded-2xl rounded-tr-none mb-4 inline-block ml-auto own-message-box'>
+                <p class='disclaimer text-xs text-right'>{$row['postTime']}</p>
+                <p class=''>{$row['content']}</p>
+            </div>";
+        }         
+    }
+}
+
+$content = "
+<div class='flex flex-col justify-center items-center py-10 md:flex-row mx-6'>
+    <div class='container item pb-2 '>
+        <div class='flex flex-col chat'>    
+            {$chat_content}
+        </div>
+    </div>
+</div>";
+
+
+
+require_once(TEMPLATES_ROOT.'/forum_base.php');

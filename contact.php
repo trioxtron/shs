@@ -6,7 +6,7 @@ $styles = 'index';
 $title = "Email verfassen";
 
 $header_links = array(
-    "about.php" => "Über uns"
+    "about.php" => "Übersicht"
 );
 
 if (!isset($_GET['id'])) {

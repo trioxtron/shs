@@ -6,7 +6,7 @@
             ?>
             
             <li><a href='start.php' class="hover:text-gray-400">Kurse</a></li>
-            <li><a href='userchats.php' class="hover:text-gray-400">Meine Chats</a></li>                       
+            <li><a href='forum.php' class="hover:text-gray-400">Forum</a></li>                       
             
             <?php
             } else {

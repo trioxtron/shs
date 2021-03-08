@@ -14,6 +14,6 @@
         <main class="mb-auto">
             <?=$content?>
         </main>
-        <?=load_template('partials/chat_footer.php')?>
+        <?=load_template('partials/forum_footer.php')?>
     </body>
 </html>

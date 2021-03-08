@@ -8,11 +8,11 @@ if (isset($_POST['send'])) {
 
     require 'dbh.inc.php';
     $content = $_POST['text'];
-    $date = date("Y-m-d");
+    $time = date("H:i");
     $id = $_SESSION['userId'];
     $name = $_SESSION['userUid'];
     if ($content != "") {
-        $sql = "INSERT INTO forum (content, postDate, creatorName, creatorId) VALUES ('$content', '$date', '$name', '$id');";
+        $sql = "INSERT INTO forum (content, postTime, creatorName, creatorId) VALUES ('$content', '$time', '$name', '$id');";
         mysqli_query($conn, $sql);
 
         header("Location: ../forum.php");
