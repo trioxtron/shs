@@ -15,7 +15,7 @@ $content = '
     <li></li>
     <li></li>
 </ul>
-<div class="pt-6 px-8 container mx-auto flex flex-col-reverse justify-center items-center xl:flex-row">
+<div class="pt-16 px-8 container mx-auto flex flex-col-reverse justify-center items-center xl:flex-row">
     <div class="xl:pb-8 information">
         <h1 class="font-bold underline text-4xl pb-4 xl:text-5xl xl:pt-6">Wir</h1>
         <p>Wir sind 3 Schüler des Geschwister Scholl Gymnasiums Lebach, die sich als Aufgabe gesetzt haben,das Projekt<br>"Schüler helfen Schülern" unserer Schule zu digitalisieren, um den bestmöglichen Lernerfolg zu garantieren</p>

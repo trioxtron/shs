@@ -52,7 +52,7 @@ $content = "
             <ul class='rounded-xl'>
                 <li><a href='courses.php' class='allcourses'>Alle Kurse</a></li>
                 <li><a href='courses.php?class=Deutsch'>Deutsch</a></li>
-                <li><a href='courses.php?class=English'>Englisch</a></li>
+                <li><a href='courses.php?class=Englisch'>Englisch</a></li>
                 <li><a href='courses.php?class=Französisch'>Französisch</a></li>
                 <li><a href='courses.php?class=Mathe'>Mathemathik</a></li>
                 <li><a href='courses.php?class=Physik'>Physik</a></li>

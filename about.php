@@ -15,12 +15,12 @@ $content = '
     <li></li>
     <li></li>
 </ul>
-<div class="pt-32 px-8 container mx-auto flex justify-center items-center">
+<div class="pt-40 px-8 container mx-auto flex justify-center items-center">
     <div class="">
         <ul class="font-bold text-4xl">
-            <li class="py-2"><a href="discover.php">> Kontakt</a></li>
-            <li class="py-2"><a href="aboutus.php">> Über uns</a></li>
-            <li class="py-2"><a href="project.php">> Über das Projekt</a></li>
+            <li class="py-2"><a class="hover:text-gray-400" href="discover.php">> Kontakt</a></li>
+            <li class="py-2"><a class="hover:text-gray-400" href="aboutus.php">> Über uns</a></li>
+            <li class="py-2"><a class="hover:text-gray-400" href="project.php">> Über das Projekt</a></li>
         </ul>
     </div>
     <div class="hidden md:block">
