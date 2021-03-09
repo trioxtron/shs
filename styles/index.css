@@ -155,7 +155,6 @@ tr:nth-child(even) {background-color: #1F303A}
   border-radius: .5rem;
   text-decoration: none;
   text-align: center;
-  font-size: 1.2rem;
   font-family: Poppins,sans-serif;
   outline: none;
   border: none;
@@ -276,4 +275,12 @@ tr:nth-child(even) {background-color: #1F303A}
 
 .own-message-box {
   background-color: var(--bubble-pink);
+}
+
+.search-bar {
+  padding: 0rem;
+}
+
+.search-bar input {
+  color: var(--items-background);
 }

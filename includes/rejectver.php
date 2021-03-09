@@ -1,14 +1,8 @@
 <?php
     include_once 'dbh.inc.php';
-?>
 
-
-<?php
     $id = $_GET['verId'];
-    $name = $_GET['verName'];
-    echo $id;
-    echo $name;
-    $sql = "UPDATE allusers SET verSend='0' WHERE idUsers='$id'";
+    $sql = "UPDATE allusers SET verSend='0' WHERE idUsers=$id";
     
     if (mysqli_query($conn, $sql)) {
     echo "Abgelehnt";

@@ -26,7 +26,7 @@ if ($resultCheck > 0) {
                 <td>{$row['class']}</td>    
                 <td>{$row['creatorName']}</td>    
                 <td>{$row['creatorEmail']}</td>    
-                <td><a href='choose.php?id={$row['coursId']}' class='btn'>kontaktieren</a></td>   
+                <td><a href='choose.php?Id={$row['coursId']}' class='btn'>kontaktieren</a></td>   
                 </tr>";
             }
         } else {
@@ -45,7 +45,7 @@ if ($resultCheck > 0) {
 
 
 $content = "
-<div class='container mx-auto mb-auto text-sm md:text-xl pt-20 pb-10'>
+<div class='container mx-auto text-sm md:text-xl pt-20 pb-10'>
     <div class='flex justify-between pb-1'>
         <div class='dropdown'>
             <p class='btn w-20'>Fach</p>

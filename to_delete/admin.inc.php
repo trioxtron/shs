@@ -1,22 +1,12 @@
 <?php
-    $id = $_POST['Id'];
-    $name = $_POST['Name'];
+$id = $_POST['Id'];
+$name = $_POST['Name'];
+include_once 'dbh.inc.php';
+session_start();
 
-?>
-
-
-<?php
-    include_once 'dbh.inc.php';
-?>
-
-<?php
-    session_start();
-?>
-<?php
-  if ($_SESSION['userId'] != 11 AND $_SESSION['userUid'] != 'Admin') {
+if ($_SESSION['userId'] != 11 AND $_SESSION['userUid'] != 'Admin') {
     header("Location: ../start.php");
-  }
-?>
+}?>
 
 
 
