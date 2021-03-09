@@ -7,10 +7,16 @@
             <?php foreach ($header_links as $key => $value): ?>
                 <li class="flex-grow"><a href="<?=$key?>" class="font-bold hover:text-gray-400"><?=$value?></a></li>
             <?php endforeach ?>
+
             <?php
             if (isset($_SESSION['userId'])) {
+                if ($_SESSION['userUid'] == 'Admin') {
+                    echo ('<li class="flex-grow"><a href="admin.php" class="font-bold hover:text-gray-400">Admin</a></li>
+                    <li><a href="includes/logout.inc.php" class="btn">Abmelden</a></li>');
+                } else {
+                    echo ('<li><a href="includes/logout.inc.php" class="btn">Abmelden</a></li>');
+                }
             ?>
-            <li><a href="includes/logout.inc.php" class="btn">Abmelden</a></li>
             <?php
             }
             ?>

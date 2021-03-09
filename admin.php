@@ -13,7 +13,7 @@ $header_links = array(
 );
 
 if ($_SESSION['userUid'] != 'Admin') {
-    header("Location: ../start.php");
+    header("Location: ../shs/start.php");
 }
 
 $sql = "SELECT * FROM allusers WHERE verSend ='1';";
@@ -34,7 +34,7 @@ if ($resultCheck > 0) {
             </td>
             </tr>";
         }
-    }
+    }<
 }
 
 

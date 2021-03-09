@@ -23,13 +23,13 @@
   color: var(--blue-text);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: var(--background-color);
   font-family: Poppins, sans-serif;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 a.button {
@@ -71,6 +71,9 @@ td {
 
 tr:nth-child(even) {background-color: #1F303A}
 
+
+
+/* Own classes and id's */
 .dropdown {
   position: relative;
 }
@@ -100,7 +103,6 @@ tr:nth-child(even) {background-color: #1F303A}
 }
 
 
-/* Own classes and id's */
 #bubbles li:nth-child(1) {
   position: absolute;
   width: 20vw;
