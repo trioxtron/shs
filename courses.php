@@ -59,7 +59,7 @@ $content = "
                 <li><a href='courses.php?class=Chemie'>Chemie</a></li>
             </ul>
         </div>
-        <a href='createcours.php' class='btn'>Kurs erstellen</a>
+        <a href='verificate.php' class='btn'>Kurs erstellen</a>
     </div>
     <table>
         <tr class='table-profile'>
