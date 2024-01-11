@@ -1,4 +1,13 @@
-﻿# MySQLi
+# Schüler helfen Schülern
+
+## Description
+This repository is archived.
+It was created due to a school contest named "Jugend Forscht" and was presented back in March 2021.
+The german name "Schüler helfen Schülern" can be translated to "Students help students" and the idea behind it was to create a platform for students to find other students for tutoring. It was meant as a meeting point to connect with others.
+
+We made 3rd place in the category "Mathematik und Technik" 2021. 
+
+#﻿# MySQLi
 
 ## Creating Tables
 
