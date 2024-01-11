@@ -7,7 +7,8 @@ The german name "Schüler helfen Schülern" can be translated to "Students help 
 
 We made 3rd place in the category "Mathematik und Technik" 2021. 
 
-#﻿# MySQLi
+
+﻿# MySQLi
 
 ## Creating Tables
 
